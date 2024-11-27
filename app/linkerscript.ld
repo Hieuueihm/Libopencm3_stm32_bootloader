@@ -37,7 +37,7 @@ SECTIONS
 	.text : {
 
 		*(.vectors)	/* Vector table */
-		. = ALIGN(16);
+		. = ALIGN(4);
 		KEEP (*(.firmware_info))
 		KEEP (*(.firmware_signature))
 
